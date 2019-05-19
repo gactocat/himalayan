@@ -1,6 +1,6 @@
 rootProject.name = "himalayan"
 
-include("databases")
+include("data-accesses")
 include("domains")
 include("infrastructures")
 include("interfaces")
