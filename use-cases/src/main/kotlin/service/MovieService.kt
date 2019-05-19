@@ -4,13 +4,13 @@ import entity.Movie
 import repository.IMovieRepository
 
 interface MovieService {
-    fun findById(userId: Long): Movie
+    fun findById(movieId: Long): Movie
 }
 
 class MovieServiceImpl(
         private val movieRepository: IMovieRepository
 ) : MovieService {
-    override fun findById(userId: Long): Movie {
-        return movieRepository.findById(userId) ?: throw IllegalStateException("No User Found for Given Id")
+    override fun findById(movieId: Long): Movie {
+        return movieRepository.findById(movieId) ?: throw IllegalStateException("No User Found for Given Id")
     }
 }
