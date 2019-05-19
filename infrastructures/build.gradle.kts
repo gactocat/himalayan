@@ -6,7 +6,7 @@ plugins {
 }
 
 application {
-    mainClassName = "himalayan.AppKt"
+    mainClassName = "io.ktor.server.netty.EngineMain"
 }
 
 repositories {
@@ -29,4 +29,3 @@ dependencies {
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.5")
     implementation("ch.qos.logback:logback-classic:1.2.1")
 }
-

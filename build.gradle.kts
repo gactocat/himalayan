@@ -37,4 +37,3 @@ subprojects {
         "testImplementation"("org.jetbrains.kotlin:kotlin-test-junit")
     }
 }
-
