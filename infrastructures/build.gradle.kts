@@ -16,7 +16,6 @@ repositories {
 
 dependencies {
     implementation(project(":data-accesses"))
-    implementation(project(":domains"))
     implementation(project(":interfaces"))
     implementation(project(":use-cases"))
 
