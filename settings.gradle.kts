@@ -1,7 +1,7 @@
 rootProject.name = "himalayan"
 
-include("data-accesses")
-include("domains")
-include("infrastructures")
-include("interfaces")
-include("use-cases")
+include("dataaccess")
+include("domain")
+include("infrastructure")
+include("interface")
+include("usecase")

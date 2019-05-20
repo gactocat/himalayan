@@ -15,9 +15,9 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":data-accesses"))
-    implementation(project(":interfaces"))
-    implementation(project(":use-cases"))
+    implementation(project(":dataaccess"))
+    implementation(project(":interface"))
+    implementation(project(":usecase"))
 
     implementation("io.ktor:ktor-server-netty:$ktorVersion")
     implementation("io.ktor:ktor-locations:$ktorVersion")
