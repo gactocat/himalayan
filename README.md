@@ -7,5 +7,5 @@ API server of clean architecture implementation in Kotlin.
 Exec the following to run.
 
 ```shell
-$ gradle :infrastructures:run
+./gradlew :infrastructure:run
 ```

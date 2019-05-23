@@ -1,5 +1,6 @@
-val ktorVersion = "1.0.0"
-val koinVersion = "1.0.1"
+val ktorVersion = "1.2.0"
+val koinVersion = "1.0.2"
+val jacksonVersion = "2.9.9"
 
 plugins {
     application
@@ -15,16 +16,16 @@ repositories {
 }
 
 dependencies {
-    implementation(project(":dataaccess"))
+    implementation(project(":data-access"))
     implementation(project(":interface"))
-    implementation(project(":usecase"))
+    implementation(project(":use-case"))
 
     implementation("io.ktor:ktor-server-netty:$ktorVersion")
     implementation("io.ktor:ktor-locations:$ktorVersion")
     implementation("io.ktor:ktor-jackson:$ktorVersion")
     implementation("org.koin:koin-ktor:$koinVersion")
 
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.7")
-    implementation("com.fasterxml.jackson.datatype:jackson-datatype-joda:2.9.5")
-    implementation("ch.qos.logback:logback-classic:1.2.1")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-joda:$jacksonVersion")
+    implementation("ch.qos.logback:logback-classic:1.2.3")
 }
