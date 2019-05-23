@@ -27,5 +27,8 @@ dependencies {
 
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:$jacksonVersion")
     implementation("com.fasterxml.jackson.datatype:jackson-datatype-joda:$jacksonVersion")
-    implementation("ch.qos.logback:logback-classic:1.2.3")
+
+    testImplementation("io.ktor:ktor-server-test-host:$ktorVersion")
+    testImplementation("org.koin:koin-test:$koinVersion")
+    testImplementation("org.assertj:assertj-core:3.11.1")
 }
