@@ -15,7 +15,7 @@ import org.koin.standalone.StandAloneContext
 @KtorExperimentalLocationsAPI
 @KtorExperimentalAPI
 class MovieTest {
-    val objectMapper = jacksonObjectMapper()
+    private val objectMapper = jacksonObjectMapper()
 
     @Test
     fun `Get a movie when request by id`() {
