@@ -16,9 +16,9 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":use-case"))
     implementation(project(":data-access"))
     implementation(project(":interface"))
-    implementation(project(":use-case"))
 
     implementation("io.ktor:ktor-server-netty:$ktorVersion")
     implementation("io.ktor:ktor-locations:$ktorVersion")
@@ -31,4 +31,5 @@ dependencies {
     testImplementation("io.ktor:ktor-server-test-host:$ktorVersion")
     testImplementation("org.koin:koin-test:$koinVersion")
     testImplementation("org.assertj:assertj-core:3.11.1")
+    testImplementation("io.mockk:mockk:1.8.10.kotlin13")
 }

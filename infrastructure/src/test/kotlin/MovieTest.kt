@@ -1,6 +1,5 @@
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import controller.MovieResponse
-import entity.OnairStatus
 import io.ktor.application.Application
 import io.ktor.http.HttpMethod
 import io.ktor.http.HttpStatusCode
@@ -24,7 +23,7 @@ class MovieTest {
                 Assertions.assertThat(response.status()).isEqualTo(HttpStatusCode.OK)
                 val movie = objectMapper.readValue(response.content, MovieResponse::class.java)
                 Assertions.assertThat(movie).isEqualTo(MovieResponse(
-                        1, "Test", OnairStatus.IN_LIVE.rawValue
+                        1, "Test", 1
                 ))
             }
             StandAloneContext.stopKoin()

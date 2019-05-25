@@ -8,7 +8,7 @@ This repository is designed based on [The Twelve Factor App](https://12factor.ne
 Exec the following to run.
 
 ```shell
-./gradlew :infrastructure:run
+./gradlew run
 ```
 
 So you can refer to the following.
@@ -29,7 +29,11 @@ This is a tar containing the executable file.
 
 ## Test
 
-TBD
+Exec the following to test.
+
+```shell
+./gradlew test
+```
 
 ## Deploy
 
