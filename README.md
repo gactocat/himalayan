@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/gactocat/himalayan.svg?style=svg)](https://circleci.com/gh/gactocat/himalayan)
 
-API server in Kotlin.
+API server in Kotlin.  
 This repository is designed based on [The Twelve Factor App](https://12factor.net/) and The Clean Architecture.
 
 ## Run
@@ -25,9 +25,11 @@ Exec the following to build.
 ./gradlew :infrastructure:distTar
 ```
 
-This is a tar containing the executable file.
+A tar is generated that contains the executable file.
 
-`./infrastructure/build/distributions/infrastructure.tar`
+```
+./infrastructure/build/distributions/infrastructure.tar
+```
 
 ## Test
 
