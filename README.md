@@ -1,5 +1,7 @@
 # 🐥 himalayan
 
+[![CircleCI](https://circleci.com/gh/gactocat/himalayan.svg?style=svg)](https://circleci.com/gh/gactocat/himalayan)
+
 API server in Kotlin.
 This repository is designed based on [The Twelve Factor App](https://12factor.net/) and The Clean Architecture.
 
