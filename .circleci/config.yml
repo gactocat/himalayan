@@ -13,23 +13,27 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "build.gradle.kts" }}
             - v1-dependencies-
-      - run: gradle dependencies
+      - run:
+          name: Install dependencies
+          command: gradle dependencies
       - save_cache:
           paths:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle.kts" }}
       - persist_to_workspace:
-          root: . # workspaceのrootパス（絶対パスかworking_directoryからの相対パス）
+          root: .
           paths:
-            - . # 共有するパス（絶対パスかrootからの相対パス）
+            - .
   test:
     docker:
       - image: circleci/openjdk:8-jdk
     working_directory: ~/repo
     steps:
-      - attach_workspace: # workspaceをアタッチする
+      - attach_workspace:
           at: .
-      - run: gradle test
+      - run:
+          name: Test
+          command: gradle test
       - run:
           name: Save test results
           command: |
